@@ -9,9 +9,9 @@ ARG LATEST
 
 RUN env && \
 curl --insecure -OL 'https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/'$LATEST.zip && \
-unzip $LATEST.zip && rm $LATEST.zip
+mkdir sonar_scanner && unzip -d sonar_scanner $LATEST.zip && mv sonar_scanner/* sonar_home && rm -rf sonar_scanner $LATEST.zip
 
-ENV SONAR_RUNNER_HOME=/root/$LATEST
-ENV PATH $PATH:/root/$LATEST/bin
+ENV SONAR_RUNNER_HOME=/root/sonar_home
+ENV PATH ${SONAR_RUNNER_HOME}/bin:$PATH
 
 CMD sonar-scanner -Dsonar.projectBaseDir=./src
