@@ -1,8 +1,7 @@
 FROM openjdk:16-jdk-alpine3.12
 
 
-
-RUN apk update && apk add --no-cache curl git python3
+RUN apk update && apk add --no-cache curl git python3 py3-pip
 RUN pip3 install --upgrade pip pylint setuptools
 
 WORKDIR /root
