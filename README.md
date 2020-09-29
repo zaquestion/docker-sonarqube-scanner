@@ -1,3 +1,7 @@
+# Deprecated
+
+These days https://github.com/newtmitch/docker-sonar-scanner is recommended, which should support everything here. Originally when this project was made there were issues with newtmitch's version (circa 2016), which have sense be resolved. Newtmitch's project is much better maintained, although I will review/merge PR's made here for those using this project.
+
 # docker-sonarqube-scanner
 
 runs sonar-scanner in a docker container so you don't have to pollute your system with Java.
