@@ -1,4 +1,4 @@
-FROM java:16-jdk-alpine3.12
+FROM openjdk:16-jdk-alpine3.12
 
 RUN apk update && apk add --no-cache curl git python3
 RUN pip3 install --upgrade pip pylint setuptools
