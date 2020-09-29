@@ -8,7 +8,7 @@ WORKDIR /root
 ARG LATEST
 
 RUN env && \
-curl --insecure -OL 'https://sonarsource.bintray.com/Distribution/sonar-scanner-cli/'$LATEST.zip && \
+curl --insecure -OL 'https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/'$LATEST.zip && \
 mkdir sonar_scanner && unzip -d sonar_scanner $LATEST.zip && mv sonar_scanner/* sonar_home && rm -rf sonar_scanner $LATEST.zip
 
 ENV SONAR_RUNNER_HOME=/root/sonar_home
