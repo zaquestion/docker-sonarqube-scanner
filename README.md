@@ -1,6 +1,8 @@
 # Deprecated
 
-These days https://github.com/newtmitch/docker-sonar-scanner is recommended, which should support everything here. Originally when this project was made there were issues with newtmitch's version (circa 2016), which have since be resolved. Newtmitch's project is much better maintained, although I will review/merge PR's made here for those using this project.
+Originally when this project was made there wasn't an official image and there were issues with newtmitch's version (circa 2016), which have since be resolved. I will review/merge PR's made here for those using this project, however I recommend using the better maintained alternatives:
+* https://hub.docker.com/r/sonarsource/sonar-scanner-cli
+* https://hub.docker.com/r/newtmitch/sonar-scanner
 
 # docker-sonarqube-scanner
 
